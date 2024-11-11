@@ -1,0 +1,250 @@
+body {
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #3333334f;
+    width: 100%;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.text-1, .text-2, .text-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.zsection1 .text-1, .zsection3 .text-3 {
+    flex-direction: row;
+}
+
+.text-1 h3, .text-2 h3, .text-3 h3 {
+    width: 100%;
+    text-align: left;
+}
+
+img {
+    transition: transform 0.3s ease;
+    border-radius: 100px;
+    width: 700px;
+    margin-left: 20px;
+}
+
+.text-2 img {
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    font-family: 'Lucida Sans', sans-serif;
+    color: rgb(0, 68, 255);
+    margin-left: 80px;
+    font-size: 27px;
+    text-align: left;
+}
+
+img {
+    transition: transform 0.3s ease;
+    border-radius: 100px;
+    width: 700px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1;
+    height: 40px;
+    width: 95%;
+}
+
+.header:hover {
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 25px;
+    color: #666;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.nav li:hover {
+    color: #333;
+}
+
+.nav li:hover::after {
+    width: 100%;
+    background-color: #333;
+}
+
+.download-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: #333;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.4s ease;
+    z-index: 0;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.download-button:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.download-button:hover {
+    color: #fff;
+}
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading1 .heading2 .heading3 {
+    text-align: left;
+    color: black;
+}
+
+.paragraph1 .paragraph2 .paragraph3 {
+    text-align: left;
+}
+
+.heading1 {
+    padding-right: 250px;
+    color: #000;
+}
+
+.heading2 {
+    padding-right: 250px;
+    color: #000;
+}
+
+.heading3 {
+    padding-right: 250px;
+    padding-top: 150px;
+    color: #000;
+}
+
+.paragraph1 {
+    padding-bottom: 150px;
+}
+
+.heading4 {
+    color: #000;
+}
+
+.heading5 {
+    color: #000;
+}
+
+.heading6 {
+    padding-top: 150px;
+    color: #000;
+}
+
+.paragraph4 {
+    padding-bottom: 150px;
+}
+
+.paragraph4 {
+    padding-left: 150px;
+}
+
+.paragraph5 {
+    padding-left: 150px;
+}
+
+.paragraph {
+    padding-left: 150px;
+}
+

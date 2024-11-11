@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .heading {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Fill the Form</h1>
+    </div>
+
+    <div class="form-container">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">1. What is you full name?</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="father_name">2. What is your father name?</label>
+            <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required>
+
+            <label for="email">3. What is your email adress?</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">4. What is your phone number?</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="id_card">5. What is your ID card number?</label>
+            <input type="text" id="id_card" name="id_card" placeholder="Enter your ID card number" required>
+
+            <label for="age">6. How much old are you?</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="gender">7. What is your gender?</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="country">8. Which country do you live in?</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+
+            <label for="city">9. Which city do you lives in?</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+
+            <label for="postal_code">10. What is your postal code?</label>
+            <input type="text" id="postal_code" name="postal_code" placeholder="Enter your postal code" required>
+
+            <label for="experience">11. How satisfy are you with our service?</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select your experience level</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="feedback">12. What can we improve?</label>
+            <textarea id="feedback" name="feedback" placeholder="Share your feedback" required></textarea>
+
+            <label for="visit">13. How often you visit our website?</label>
+            <select id="visit" name="visit" required>
+                <option value="">How often?</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label for="recommend">14. Would you recommand us to others?</label>
+            <select id="recommend" name="recommend" required>
+                <option value="">Recommendation</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="quality">15. How would you rate the quality of our content?</label>
+            <select id="quality" name="quality" required>
+                <option value="">Rate the content quality</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

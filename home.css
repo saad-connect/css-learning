@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4; /* Light background for contrast */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #005600, #66bb6a, #007A33);
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(135deg, #005600, #66bb6a, #007A33);
+    }
+    100% {
+        background: linear-gradient(135deg, #007A33, #66bb6a, #005600);
+    }
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    opacity: 0; /* Start hidden for fade-in effect */
+    animation: fadeInUp 0.5s forwards; /* Apply fade-in effect */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transform for scaling */
+}
+
+nav ul li a:hover {
+    color: #cfd8dc;
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #cfd8dc;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons .icon {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2);
+    color: #cfd8dc; /* Change color on hover */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1;
+    height: 40px;
+    width: 95%;
+}
+
+.header:hover {
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+body{
+    background-color: aqua;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #007A33, #FFFFFF);
+    color: #333;
+}
+
+header {
+    background-color: #007A33; /* Pakistan Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    height: 600px; /* Increased height */
+    overflow: hidden;
+}
+
+.banner-images {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFD700; /* Yellow */
+}
+
+.banner-content p {
+    font-size: 18px;
+    color: #FFFFFF; /* White */
+}
+
+.info {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-image {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.info-text {
+    text-align: justify;
+}
+
+.offices-reviews {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.offices {
+    width: 45%;
+}
+
+.reviews {
+    width: 45%;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offices-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.office {
+    background: #007A33; /* Pakistan Green */
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.office:hover {
+    transform: translateY(-5px);
+    background: #005bb5; /* Darker Green */
+}
+
+.review-slideshow {
+    position: relative;
+}
+
+.review {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.review-active {
+    opacity: 1;
+}
+
+.map {
+    padding: 20px;
+}
+
+.map-container {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #007A33; /* Pakistan Green */
+    color: white;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Yellow */
+}
+.review-slideshow {
+    animation: fade 10s infinite;
+}
+
+@keyframes fade {
+    0%, 20% { opacity: 1; }
+    25%, 95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007A33;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+.scroll-to-top:hover {
+    background: #005bb5; /* Darker Green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .offices-reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offices, .reviews {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.para{
+    text-align: center;
+}
+.about-pakistan {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about-pakistan h1 {
+    color: #007A33;
+    text-align: center;
+;
+    
+}
+
+.about-pakistan p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.h11{
+    font-size: 40px;
+}
